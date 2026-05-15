@@ -1,16 +1,121 @@
-# React + Vite
+## MoringaTaskFlow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MoringaTaskFlow is a student task management application built with React and Tailwind CSS. The application helps students organize assignments, projects, exams, and deadlines in one place.
 
-Currently, two official plugins are available:
+## Features
+1. Authentication
+User Sign Up
+User Login
+Session persistence using LocalStorage
+Form validation and error handling
+2. Dashboard
+Overview of total tasks
+Completed tasks count
+Pending tasks count
+Due today statistics
+3. Task Management
+Create new tasks
+Edit task details
+Mark tasks as completed
+Delete tasks
+Search tasks
+Filter tasks by status and priority
+4. Calendar View
+View tasks by deadline
+Interactive calendar interface
+Highlighted task dates
+5. Profile Management
+Update profile information
+View account statistics
+Delete account functionality
+6. Responsive UI
+Modern design using Tailwind CSS
+Mobile-friendly layout
+Sidebar navigation
+Interactive task cards
+## Technologies Used
+1. Frontend
+React
+React Router DOM
+Tailwind CSS
+Lucide React Icons
+2. State Management
+React Hooks (useState, useEffect)
+3. Storage
+Browser LocalStorage
+JSON Server (optional API support)
+## Project Structure
+src/
+│
+├── components/
+│   └── Sidebar.jsx
+│
+├── pages/
+│   ├── Login.jsx
+│   ├── Home.jsx
+│   ├── Tasks.jsx
+│   ├── Calendar.jsx
+│   ├── Profile.jsx
+│   └── CreateTask.jsx
+│
+├── services/
+│   └── api.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+## Installation
+1. Clone the Repository
+git clone https://github.com/coll-ins/Moringa-task-presentation.git
+2. Navigate into the Project Folder
+cd Moringa-task-presentation
+3. Install Dependencies
+npm install
+4. Start Development Server
+npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The application will run on:
 
-## React Compiler
+http://localhost:5173
+Running JSON Server 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+If using API functionality with db.json:
 
-## Expanding the ESLint configuration
+npx json-server --watch db.json --port 3000
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Server runs at:
+
+http://localhost:3000
+## Usage Guide
+1. Sign Up
+Create a new account using your name, email, and password.
+2. Login
+Log in using registered credentials.
+3. Create Tasks
+Add tasks with:
+. Title
+. Due Date
+. Priority
+. Category
+4. Manage Tasks
+Mark tasks as completed
+Delete unnecessary tasks
+Search and filter tasks
+5. Calendar
+View deadlines by date
+Select dates to view related tasks
+## Future Improvements
+Backend database integration
+User authentication with Firebase
+Drag and drop tasks
+Notifications and reminders
+Dark mode support
+Task editing functionality
+## Contributors
+Tabitha Mburu
+Collins
+Mark
+victor
+## License
+
+This project is created for educational purposes at Moringa School.
